@@ -55,7 +55,13 @@ ul li a{
   color: #FFFFFF;
   border-radius: 25px;
   border: none;
-background-color: rgb(34, 0, 12);
+background: linear-gradient(
+  115deg,
+    #FFD86F,
+    #FF4ECD,
+    #B721FF,
+    #4A00E0
+);
 }
 
 .navbar>span{
@@ -77,7 +83,13 @@ height: 760px;
  height: 44px;
  border-radius: 20px;
  border: none;
- background-color: deeppink;
+ background: linear-gradient(
+  145deg,
+    #FFD86F,
+    #ff4e98,
+    #B721FF,
+    #4A00E0
+);
  margin-right: 10px;
 }
 
@@ -184,7 +196,99 @@ height: 558px;}
 
 /* grid-section style */
 
+.Choose {
+max-width: 1200px;
+height: 59px ;
+margin: 0 auto;
+padding: 120px;
+}
 
+
+.grid-container{
+background-color:#230E3D;
+max-width: 1600px;
+margin: 0 auto;
+height: 1151px;
+
+}
+
+.audio{
+  grid-area: audio;
+  background-color: #351165;
+  border-radius: 12px;
+ padding-top: 130px ;
+ padding-left: 20px;
+height: 509px;
+
+}
+.mobile{
+  
+  grid-area: mobile;
+  background-color: #351165;
+  border-radius: 12px;
+  height: 225px;
+ padding-top: 30px ;
+ padding-left: 20px;
+
+}
+.global{
+  grid-area: global;
+  background-color: #351165;
+  border-radius: 12px;
+padding-left: 20px;
+ height: 225px;
+ padding-top: 30px ;
+
+}
+.interviews{
+  grid-area: interviews ;
+  background-color: #351165;
+  border-radius: 12px;
+  height: 273px;
+ padding-top: 30px ;
+ padding-left: 20px;
+
+}
+.resources{
+grid-area:  resources;
+background-color: #351165;
+  border-radius: 18px;
+  justify-content: center;
+
+ padding-top: 30px;
+ padding-left: 20px;
+
+}
+
+
+.grid-section{
+ 
+  margin: 40px auto;
+  max-width: 1200px;
+  height: 812px;
+  display: grid;
+  gap:20px;
+
+grid-template-areas: 
+
+       "audio audio mobile mobile mobile mobile"
+       "audio audio  mobile mobile mobile mobile"
+       "audio audio global global global global "
+        "audio audio global global global global "
+        "interviews interviews interviews interviews resources resources"
+          "interviews interviews interviews interviews resources resources"
+
+;
+ 
+}
+.grid-section h2{
+  font-size: 24px;
+  font-weight: 600;
+}
+.grid-section p{
+  font-size: 16px;
+  color:  rgb(209, 204, 204);;
+}
 
 
 
@@ -238,5 +342,61 @@ padding-left: 30px;
   margin-bottom: 7px;
 }
 
+
+.grid-section{
+ 
+  margin: 60px auto;
+
   
+  display: grid;
+  gap:20px;
+
+grid-template-areas: 
+
+       "audio audio audio audio audio audio"
+       " mobile mobile  mobile mobile mobile mobile"
+       " global global global global global global "
+       
+        "interviews interviews interviews interviews interviews interviews "
+          "resources resources resources resources resources resources  "
+
+;
+
+
+}
+
+.grid-container{
+background: color #230e3d ;
+max-width: 1600px;
+margin: 0 20px;
+height: 1151px;
+
+
+}
+
+
+.mobile{
+  
+  
+  background-color: #351165;
+  border-radius: 12px;
+  height: 287px;
+ 
+ padding-top: 30px ;
+ padding-left: 20px;
+
+}
+
+.Choose {
+
+padding: 40px;
+
+}
+.Choose h1{
+  font-size: 32px !important;
+  white-space: nowrap;
+  font-weight: 600;
+  
+} 
+
 }
