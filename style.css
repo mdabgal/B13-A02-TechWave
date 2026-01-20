@@ -84,10 +84,61 @@ background: linear-gradient(
 
 .banner-section{
   max-width: 1600px;
-  margin:20px  auto;
+  margin:0px  auto;
 height: 760px;
   background-image: url(./assets/hero-bg.png);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.banner-image{
+  width: 350px;
+  height: 350px;
+  background-image: url(./assets/hero-circle.png);
+ 
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ margin: 0 auto;
+  transform: translateY(-60px);
+ position: relative;
+}
+
+
+.banner-text{
+  max-width: 550px;
+  min-height: 168px;
+text-align: center;
+
+}
+@keyframes colorChange {
+  0% { color: #00FF88; }
+  25% { color: #FFD86F; }
+  50% {color: crimson;}
+  75% {color: darkcyan;}
+  100% { color: #B721FF; }
+}
+
+
+.banner-text h1{
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 20px;
+ animation: colorChange 7s ease-in-out infinite;
+}
+.banner-text p{
+  color: rgba(230, 227, 227, 0.897);
+ white-space: nowrap;
+ margin-bottom: 30px;
+ font-size: 16px;
+}
+
+
+
 
 .btn-secand{
  width: 201px; 
@@ -107,7 +158,6 @@ height: 760px;
 
 
 
-
 .btn-praimary{
   font-size: 16px;
   font-weight: 500;
@@ -117,25 +167,15 @@ height: 760px;
   height: 44px;
   border-radius: 20px;
   border: 1px solid #00FF88;
+  
 }
-.banner-contend{
-  margin-left: 620px;
-padding-top: 60px;
-width: 550px;
-height: 558px;}
 
-  .banner-images{
-    position: relative;
-    width: 350px;
-    height: 350px;
-    background-image: url(./assets/hero-circle.png);
-  }
-  .banner-images img{
- padding-bottom: 40px;
- position: absolute;
- margin-top: 60px;
- left: 110px;
-  }
+ 
+
+
+
+
+  
   .banner-button{
     width: 75px;
     height: 38px;
@@ -145,44 +185,26 @@ height: 558px;}
     border-radius: 20px ;
     font-size: 18px;
     font-weight: 600;
-    position: absolute;
-    left: 240px;
-  }
-  .pic-style{
-    width: 550px;
-  }
-
-@keyframes slideFade {
-  from {
-    transform: translateY(30px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-.slideUp{
-  font-size: 4rem;
-  margin-top: 40px;
-  animation: slideFade 1.2s ease-out both;
-}
-
-  .banner-text p{
-    font-size: 16px;
     
+    position: absolute;
+  top: -1px;
+
+  right: 5px;
+   
   }
-  .banner-text{
-    text-align: center;
-    margin-right: 160px;
-  }
+ 
+
+
+.podcast-section{
+  margin-top: 40px !important;
+}
+  
 
 /* podcast-section style */
 .podcast-section{
   max-width: 1600px;
   height: 646px;
-  margin: 0 auto;
+  margin: 0 auto ;
 }
 
 .About-container{
@@ -467,6 +489,46 @@ margin: 0 auto;
 
 
 }
+
+ .banner-section{
+    flex-direction: column;   
+    height: auto;
+    padding: 20px;
+    background-size: 220% ;
+    background-position: center;
+    background-color: #1e053f;
+  }
+
+  .banner-image{
+    width: 260px;
+    height: 260px;
+    transform: translateY(0);  
+    margin-bottom: 20px;
+  }
+
+  .banner-text{
+    max-width: 100%;
+  }
+
+  .banner-text h1{
+    font-size: 36px;
+  }
+
+  .banner-text p{
+    white-space: normal;  
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+
+
+
+
+
+
+
+
+
 
 .TechWave h1{
   font-size: 35px;
