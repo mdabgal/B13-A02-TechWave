@@ -15,6 +15,9 @@ color: #FFFFFF;
 }
 
 
+
+
+
 /* Navbar Style */
 
 .navbar{
@@ -47,6 +50,14 @@ ul li a{
   font-size: 16px;
   font-weight: 500;
 
+}
+.multi-color{
+  font-weight: 700;
+  background: linear-gradient(  #B721FF,  #4A00E0,
+    #FF4ECD,
+  #FFD86F );
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 .btn{
@@ -94,6 +105,9 @@ height: 760px;
 }
 
 
+
+
+
 .btn-praimary{
   font-size: 16px;
   font-weight: 500;
@@ -137,10 +151,24 @@ height: 558px;}
   .pic-style{
     width: 550px;
   }
-  .banner-text h1{
-    font-size: 4rem;
-    margin-top: 40px;
+
+@keyframes slideFade {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
   }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slideUp{
+  font-size: 4rem;
+  margin-top: 40px;
+  animation: slideFade 1.2s ease-out both;
+}
+
   .banner-text p{
     font-size: 16px;
     
@@ -172,9 +200,12 @@ height: 558px;}
   margin-bottom: 20px;
 }
 .TechWave p{
+ margin: 0 auto;
+ max-width: 770px;
   color: rgb(209, 204, 204);
   font-size: 16px;
-  font-weight: 500px;
+line-height: 2;
+  font-weight: 500;
   
 }
 .margin-center{
@@ -293,7 +324,7 @@ grid-template-areas:
 /* card-section style */
 .card-section{
   max-width: 1600px ;
-  margin: 120px auto;
+  margin: 120px auto 50px auto;
 }
 .card-container{
  
@@ -333,13 +364,13 @@ margin-bottom: 15px;
 }
 /* section-box style */
 .section-box{
-  width: 1600px;
-  margin: 0 auto;
+ max-width: 1600px;
+  margin: 120px auto 0 auto;
 }
 .box-style{
   border-radius: 40px;
   max-width: 1200px;
-  height: 379px;
+ min-height:  379px;
  margin: 60px auto;
 display: flex;
 background-color: #452969;
@@ -379,13 +410,35 @@ display: flex;
 }
 
 
+/* footer style */
 
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+max-width: 1600px;
+margin: 0 auto;
+  min-height: 412px;
+  background-image: url(./assets/footer-bg.png);
+ 
+}
 
+.footer-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
-
-
-
-
+.footer-flex{
+  display: flex;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+.footer-container h1{
+  font-size: 64px;
+  margin-bottom: 20px;
+}
 
 
  
@@ -413,6 +466,18 @@ display: flex;
   margin-bottom: 60px;
 
 
+}
+
+.TechWave h1{
+  font-size: 35px;
+  
+}
+
+.TechWave p{
+  
+  margin-bottom: 0px;
+line-height: 1.5;
+ 
 }
 
 
@@ -493,7 +558,59 @@ row-gap: 15px;
 }
 
 .card-section{
-  margin-top: 620px;
+  margin-top: 650px;
 }
+
+
+.box-style{
+border-radius: 20px;
+ max-width: 90% ;
+  height: 100%;
+margin: 20 auto;
+flex-direction: column;
+background-color: #452969;
+align-items: center;
+
+padding-top: 20px;
+
+min-height: 546px;
+align-items: center;
+text-align: center;
+}
+.logo{
+  justify-content: center;
+}
+.manu-banner{
+  max-width: 352px;
+}
+.section-box{
+ margin-top: 50px; 
+}
+
+
+
+ footer{
+    min-height: 168px;         
+    background-size: cover;     
+    background-position: center;
+  }
+
+  .footer-container{
+    padding: 20px 5px;
+  }
+
+  .footer-container h1{
+    font-size: 36px;            
+  }
+
+  .footer-flex{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+    gap: 10px;
+  }
+
+
+ 
 
 }
